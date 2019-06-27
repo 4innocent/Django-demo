@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'booktest'
+    'booktest',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +74,7 @@ WSGI_APPLICATION = 'demo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+# 配置数据库
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

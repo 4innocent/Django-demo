@@ -14,8 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
+from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 包含app的urls，在路由查找是第一步先从项目urls查找如果有匹配在匹配项中查找
+    # 如果booktest/index匹配项为 r"^booktest/",那么在进行第二次匹配时会删除第一次匹配到的字符串，即为index
+    url(r'^',include("booktest.urls"))
 ]

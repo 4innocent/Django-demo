@@ -32,3 +32,17 @@
     1. 在settings中设置语言和时区
     2. python manage.py createsuperuser 创建超级管理员
     3. python manage.py runserver 启动服务器登陆管理员/admin
+    
+## 3. View视图
+
+ > 添加路由
+
+    1. 在app中新建urls文件
+    2. 在项目目录中的urls文件中添加app的urls
+    3. 在view中添加方法，方法名即为url地址
+    
+## 4. 模板
+
+    1.在项目目录下新建templates文件夹，文件夹中包括各个app文件夹，内含对应app的html
+    2. 在setting中配置模板路径
+    3. 在views文件中使用render函数渲染模板并返回

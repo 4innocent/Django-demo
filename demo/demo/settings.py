@@ -52,10 +52,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'demo.urls'
 
+
+# 配置模板
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,"templates")],  # 配置模板的路径
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

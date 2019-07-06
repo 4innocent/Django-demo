@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>这是一个模板文件</h1>
+<!--使用django模板渲染的数据-->
+<span>变量渲染的数据:</span>{{content}}
+<!--django还支持for循环创建元素，类似vue的v-for-->
+<ul>
+    {% for i in list %}
+        <li>{{i}}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

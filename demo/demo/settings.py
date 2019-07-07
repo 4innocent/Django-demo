@@ -81,6 +81,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        # 配置mysql数据库
+        # 'ENGINE': 'django.db.backends.mysql',
+        # "NAME": "demo",
+        # "USER": "root",  # 链接哪个用户
+        # "PASSWORD": "151jia",  #用户对应的密码
+        # "HOST": "localhost",  # 指定mysql数据库所在的ip
+        # "PORT": 3306,
     }
 }
 
